@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FB体育 · 产品说明</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            background-color: #f4f6fa;
+            color: #1e2a3a;
+            line-height: 1.6;
+        }
+
+        /* 深色头图 */
+        .hero {
+            background: linear-gradient(145deg, #0f172a 0%, #1e2a3a 100%);
+            color: #e9edf2;
+            padding: 5rem 2rem 4rem;
+            text-align: center;
+            border-bottom: 4px solid #b8860b;
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            margin-bottom: 0.75rem;
+        }
+
+        .hero h1 span {
+            color: #d4a017;
+        }
+
+        .hero .subhead {
+            font-size: 1.2rem;
+            max-width: 720px;
+            margin: 0 auto;
+            color: #b0bec5;
+            font-weight: 400;
+        }
+
+        /* 浅色正文区 */
+        .container {
+            max-width: 1120px;
+            margin: 0 auto;
+            padding: 3rem 2rem 5rem;
+        }
+
+        .section-title {
+            font-size: 1.6rem;
+            font-weight: 600;
+            margin-bottom: 1.2rem;
+            color: #0f172a;
+            border-left: 4px solid #b8860b;
+            padding-left: 1rem;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 2rem;
+            margin: 2.5rem 0;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 1.8rem 1.5rem;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+            border: 1px solid #e2e8f0;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 16px 32px rgba(0, 0, 0, 0.06);
+        }
+
+        .card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0.75rem;
+            color: #1e2a3a;
+        }
+
+        .card p {
+            color: #475569;
+            font-size: 0.95rem;
+        }
+
+        .highlight {
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 2rem 2.2rem;
+            margin: 2rem 0;
+            border-left: 6px solid #b8860b;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+        }
+
+        .highlight p {
+            margin-bottom: 0.8rem;
+        }
+
+        .highlight strong {
+            color: #0f172a;
+        }
+
+        .faq-item {
+            background: #ffffff;
+            border-radius: 16px;
+            padding: 1.5rem 2rem;
+            margin-bottom: 1rem;
+            border: 1px solid #e9edf2;
+        }
+
+        .faq-item .question {
+            font-weight: 600;
+            color: #0f172a;
+            margin-bottom: 0.4rem;
+        }
+
+        .faq-item .answer {
+            color: #475569;
+            font-size: 0.95rem;
+        }
+
+        .link-sentence {
+            margin-top: 2rem;
+            padding: 1.5rem 0;
+            text-align: center;
+            font-size: 1.05rem;
+            border-top: 1px solid #dce1e8;
+        }
+
+        .link-sentence a {
+            color: #b8860b;
+            text-decoration: none;
+            font-weight: 600;
+            border-bottom: 1px dashed #b8860b;
+            transition: border-bottom 0.2s;
+        }
+
+        .link-sentence a:hover {
+            border-bottom: 2px solid #b8860b;
+        }
+
+        .footer-note {
+            text-align: center;
+            color: #64748b;
+            font-size: 0.9rem;
+            margin-top: 4rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #dce1e8;
+        }
+
+        a {
+            color: #b8860b;
+        }
+
+        @media (max-width: 640px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .hero {
+                padding: 3.5rem 1.5rem 3rem;
+            }
+            .container {
+                padding: 2rem 1.2rem;
+            }
+            .card-grid {
+                gap: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <h1><span>FB</span>体育 · 产品摘要</h1>
+        <p class="subhead">面向体育数据与信息整合场景，提供清晰、可靠的内容服务。</p>
+    </section>
+
+    <div class="container">
+
+        <!-- 摘要 -->
+        <div class="highlight">
+            <p><strong>FB体育</strong> 定位为体育信息聚合与查询工具，覆盖赛事数据、队伍动态、赛季统计等维度。产品持续优化数据呈现方式，力求为使用者提供结构清晰、更新及时的参考信息。不涉及竞猜、投注或任何形式的博彩引导，内容仅用于信息参考与个人兴趣了解。</p>
+        </div>
+
+        <!-- 亮点卡片 -->
+        <h2 class="section-title">核心亮点</h2>
+        <div class="card-grid">
+            <div class="card">
+                <h3>多维数据整合</h3>
+                <p>从联赛积分到球员统计，覆盖主流赛事与次级联赛，数据结构化便于检索。</p>
+            </div>
+            <div class="card">
+                <h3>界面轻量响应</h3>
+                <p>适配移动端与桌面端，减少冗余加载，关注信息获取效率。</p>
+            </div>
+            <div class="card">
+                <h3>持续迭代维护</h3>
+                <p>根据数据源质量与用户反馈调整内容结构，保持信息实用性。</p>
+            </div>
+            <div class="card">
+                <h3>无诱导设计</h3>
+                <p>页面未嵌入博彩、充值或抽奖模块，聚焦体育数据本身。</p>
+            </div>
+        </div>
+
+        <!-- 使用建议 场景式 -->
+        <h2 class="section-title">适用场景与建议</h2>
+        <div style="display: flex; flex-wrap: wrap; gap: 1.8rem; margin: 1.5rem 0;">
+            <div style="flex: 1 1 200px; background: #ffffff; border-radius: 18px; padding: 1.6rem; border: 1px solid #e9edf2;">
+                <p style="font-weight: 600; margin-bottom: 0.5rem;">⚽ 日常赛事查询</p>
+                <p style="color: #475569; font-size: 0.95rem;">快速浏览即将进行的比赛及历史对阵记录，辅助个人观赛安排。</p>
+            </div>
+            <div style="flex: 1 1 200px; background: #ffffff; border-radius: 18px; padding: 1.6rem; border: 1px solid #e9edf2;">
+                <p style="font-weight: 600; margin-bottom: 0.5rem;">📊 数据横向比较</p>
+                <p style="color: #475569; font-size: 0.95rem;">对比同联赛不同球队的进球、失球、控球率等指标，便于分析趋势。</p>
+            </div>
+            <div style="flex: 1 1 200px; background: #ffffff; border-radius: 18px; padding: 1.6rem; border: 1px solid #e9edf2;">
+                <p style="font-weight: 600; margin-bottom: 0.5rem;">📱 移动端轻浏览</p>
+                <p style="color: #475569; font-size: 0.95rem;">无需安装额外应用，通过浏览器即可获取结构化体育信息。</p>
+            </div>
+        </div>
+
+        <!-- 可信且克制的访问说明 -->
+        <div class="highlight" style="border-left-color: #1e2a3a;">
+            <p><strong>访问说明</strong> · <a href="https://portal-fbsports.com">FB体育</a> 作为信息整合页面，不收集用户个人数据，不设置强制注册或付费墙。平台内容来源于公开渠道，并经过基础校验与归类。使用者应结合其他权威来源交叉验证关键数据，平台不对因信息滞后或第三方数据偏差造成的损失承担责任。</p>
+            <p style="margin-top: 0.6rem;">建议在网络环境稳定的情况下访问，部分外部数据接口可能因维护而短暂不可用，届时页面将显示缓存内容或提示信息。</p>
+        </div>
+
+        <!-- FAQ 摘要 两个自然问题 -->
+        <h2 class="section-title">常见疑问摘要</h2>
+        <div class="faq-item">
+            <div class="question">FB体育的数据更新频率如何？</div>
+            <div class="answer">主流联赛数据通常在每个比赛日结束后数小时内完成更新；次级联赛或非热门赛事可能延迟至次日。具体以页面标注时间为准。</div>
+        </div>
+        <div class="faq-item">
+            <div class="question">是否需要注册账号才能使用全部功能？</div>
+            <div class="answer">目前所有数据浏览功能均无需注册。未来若增加个性化订阅或收藏功能，会提前以显著方式告知并征得用户同意。</div>
+        </div>
+
+        <!-- 嵌入链接的自然句子 -->
+        <div class="link-sentence">
+            <p>如果你正在寻找一款专注于体育数据本身的查询工具，可以试试 <a href="https://portal-fbsports.com">FB体育</a> —— 无冗余干扰，信息结构清晰。</p>
+        </div>
+
+        <div class="footer-note">
+            © 产品说明页 · 内容仅供参考 · 数据来源于公开渠道
+        </div>
+
+    </div>
+
+</body>
+</html>
